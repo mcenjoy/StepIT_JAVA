@@ -4,96 +4,107 @@ import java.util.*;
 
 public class MainApp {
     public static void main(String[] args) {
-        int choose = 0;   // variable for menu
-        int mYear;   // model year
-        int mPrice;  // model price of car we are looking for
-        Scanner in = new Scanner(System.in);    // our Scanner for switch
-        // array of objects (creating and initializing)
-        Car[] carlist = new Car[]{
-                new Car(1, "BMW", "", 1994, "black", 2300, 869735),  // 1st car
-                new Car(2, "AUDI", "", 2002, "yellow", 4000, 869736), // 2nd car
-                new Car(3, "Volvo","", 1999, "green", 3300, 869737), // etc...
-                new Car(4, "TOYOTA","", 2002, "purple", 5000, 869738),
-                new Car(5, "Ferrari","", 2005, "red", 10000, 869739),
-                new Car(6, "Ford","", 1967, "yellow", 8800, 869739),
-                new Car(7, "Aston Martin","", 2009, "black", 18000, 869740),
-                new Car(8, "Lada", "",2013, "white", 1800, 869741),
-                new Car(9, "Dodge","", 2009, "white", 6700, 869742),
-                new Car(10, "Mitsubishi","", 2008, "red", 3200, 869743),
-                new Car(11, "Volkswagen","", 2016, "grey", 9000, 869744),
-                new Car(12, "Lexus", "",2014, "blue", 11000, 869745),
-                new Car(13, "Mercedes-Benz", "",2016, "black", 22000, 869746),
-                new Car(14, "Jaguar", "",2015, "grey", 24000, 869747),
-                new Car(15, "Lamborghini","", 2016, "silver", 30000, 869748)
-        };
+        Scanner in = new Scanner(System.in);
+        int choose; // menu option
+        String sBrand;
+        int mYear;
+        int mPrice;
+
+        Car[] carList = initCarList();
         List<Car> resultList = new ArrayList<>();
 
         do {
             showMenu();
-
             choose = in.nextInt();
             switch (choose) {
-                // show all the cars
                 case 1:
-                    printCars(Arrays.asList(carlist));
+                    System.out.println("Enter the brand of car");
+                    sBrand = in.next();
+                    for (Car car : carList) {
+                        if (sBrand.equals(car.getBrandOfCar())) {
+                            resultList.add(car);
+                        }
+                    }
+                    showResult(resultList);
                     break;
-                // list of all cars that in use more then n years
                 case 2:
                     System.out.println("Enter the number of years that the car is already operated");
                     mYear = in.nextInt();
                     Calendar calendar = Calendar.getInstance();
                     calendar.setTime(new Date());
-                    for (int i = 0; i < carlist.length; i++) {
-                        if (calendar.get(Calendar.YEAR) - mYear >= carlist[i].getYearOfCar()) {
-                            resultList.add(carlist[i]);
+                    for (Car value : carList) {
+                        if (calendar.get(Calendar.YEAR) - mYear >= value.getYearOfCar()) {
+                            resultList.add(value);
                         }
                     }
                     showResult(resultList);
                     break;
-                //  list of cars of some model year with price more then
                 case 3:
-                    System.out.println("Enter the model year");
+                    System.out.println("Enter the year of production");
                     mYear = in.nextInt();
                     System.out.println("Enter the price");
                     mPrice = in.nextInt();
-                    for (int i = 0; i < carlist.length; i++) {
-                        if (carlist[i].getYearOfCar() == mYear && carlist[i].getPriceOfCar() > mPrice)
-                            resultList.add(carlist[i]);
+                    for (Car car : carList) {
+                        if (car.getYearOfCar() == mYear && car.getPriceOfCar() > mPrice)
+                            resultList.add(car);
                     }
                     showResult(resultList);
                     break;
                 default:
+                    in.close();
                     break;
             }
         } while (choose != 4);
     }
 
     private static void showMenu() {
-        System.out.printf("%10s \n", "Menu");
-        System.out.println("1. All cars");
-        System.out.println("2. Cars that in use more then n years");
-        System.out.println("3. Cars of some period price of which is more then");
-        System.out.println("4. Exit");
+        System.out.printf("%30s\n", "*** Car List Menu Options ***");
+        System.out.println("1. View all of your selected brand cars");
+        System.out.println("2. View cars older than N years");
+        System.out.println("3. View selected period cars and the price of which is more then N");
+        System.out.println("4. Quit");
+    }
+
+    private static Car[] initCarList() {
+        final Car[] cars = {
+                new Car(1, "BMW", "X5", 2010, "black", 13000, 169735),  // 1st car
+                new Car(2, "Volkswagen", "Jetta", 2014, "grey", 12700, 169736), // 2nd car
+                new Car(3, "Mazda", "6", 2014, "red", 15000, 869737), // etc...
+                new Car(4, "TOYOTA", "Camry", 2008, "purple", 5000, 869738),
+                new Car(5, "Ferrari", "458", 2010, "red", 200000, 869739),
+                new Car(6, "Ford", "Focus", 2016, "yellow", 8800, 869739),
+                new Car(7, "Aston Martin", "Rapide", 2011, "black", 78000, 869740),
+                new Car(8, "Renault", "Megane", 2016, "white", 10899, 869741),
+                new Car(9, "Dodge", "Journey", 2015, "white", 13700, 869742),
+                new Car(10, "Mitsubishi", "Outlander XL", 2008, "red", 11200, 869743),
+                new Car(11, "Volkswagen", "CC", 2011, "grey", 11000, 869744),
+                new Car(12, "Lexus", "ES 350", 2017, "blue", 32000, 869745),
+                new Car(13, "Mercedes-Benz", "ML 320", 2009, "black", 16900, 869746),
+                new Car(14, "Jaguar", "X-Type 4x4", 2007, "grey", 24000, 869747),
+                new Car(15, "Lamborghini", "Urus", 2016, "silver", 330000, 869748)
+        };
+        return cars;
     }
 
     private static void showResult(List<Car> resultList) {
-        if (resultList.isEmpty()) {
-            System.out.println("Nothing found");
-        } else {
+        if (resultList.isEmpty()) System.out.println("Nothing found\n");
+        else {
             printCars(resultList);
             resultList.clear();
         }
     }
 
     private static void printCars(List<Car> carlist) {
-        System.out.printf("%-5s%-20s%-10s%-10s%-10s%-20s\n", "id", "brand", "year", "color", "price", "register number");
-        for (int i = 0; i < carlist.size(); i++) {
-            System.out.printf("%-5s", String.valueOf(carlist.get(i).getId()));
-            System.out.printf("%-20s", String.valueOf(carlist.get(i).getBrandOfCar()));
-            System.out.printf("%-10s", String.valueOf(carlist.get(i).getYearOfCar()));
-            System.out.printf("%-10s", String.valueOf(carlist.get(i).getColorOfCar()));
-            System.out.printf("%-10s", String.valueOf(carlist.get(i).getPriceOfCar()));
-            System.out.printf("%-20s", String.valueOf(carlist.get(i).getRegistrationNumberOfCar()));
+        System.out.printf("%-5s%-20s%-20s%-10s%-10s%-17s%-20s\n", "Id", "Brand", "Model",
+                "Year", "Color", "Price", "Registration Number");
+        for (Car car : carlist) {
+            System.out.printf("%-5s", car.getId());
+            System.out.printf("%-20s", car.getBrandOfCar());
+            System.out.printf("%-20s", car.getModelOfCar());
+            System.out.printf("%-10s", car.getYearOfCar());
+            System.out.printf("%-10s", car.getColorOfCar());
+            System.out.printf("$ %-15s", car.getPriceOfCar());
+            System.out.printf("%-20s", car.getRegistrationNumberOfCar());
             System.out.println();
         }
     }
