@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f28f9f34-3d19-43ed-9c2b-c75eb1e7cf91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Java_Home-1/META-INF/Java_Home-1.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Java_Home-1/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_1/MultiplicationTable.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1W5Of9RtuV4u0WQKAjU7LeqZsfz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MultiplicationTable" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Task_1.MultiplicationTable" />
+      <module name="StepIT" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MultiplicationTable" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f28f9f34-3d19-43ed-9c2b-c75eb1e7cf91" name="Default Changelist" comment="" />
+      <created>1578436089577</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578436089577</updated>
+      <workItem from="1578436093212" duration="11659000" />
+      <workItem from="1578449148841" duration="19266000" />
+      <workItem from="1578550663977" duration="7738000" />
+      <workItem from="1578610642679" duration="2515000" />
+      <workItem from="1578881566679" duration="37000" />
+      <workItem from="1579436998162" duration="153000" />
+      <workItem from="1579437209828" duration="1575000" />
+    </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1579437708171</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579437708171</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init commit">
+      <created>1579437881044</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579437881044</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init commit">
+      <created>1579438415663</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579438415663</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="409" y="45" key="#Main" timestamp="1578611244206">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="409" y="45" key="#Main/0.0.1366.728@0.0.1366.728" timestamp="1578611244206" />
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1578543983024">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1578543983024" />
+    <state x="484" y="277" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1579437845717">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="277" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1579437845717" />
+    <state x="445" y="255" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1578542711905">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="445" y="255" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1578542711905" />
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1579438413558">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579438413558" />
+    <state width="422" height="466" key="DebuggerActiveHint" timestamp="1578555485138">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="422" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1578555485138" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1579438164491">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1579438164491" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1579437092059">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579437092059" />
+    <state x="553" y="263" width="261" height="201" key="Github.ShareDialog" timestamp="1579437592717">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="553" y="263" width="261" height="201" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1579437592717" />
+    <state x="497" y="72" key="Github.UntrackedFilesDialog" timestamp="1579437610809">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="497" y="72" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1579437610809" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1578623826616">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578623826616" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1578623826616">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578623826616" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1578623826616">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578623826616" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1578623826616">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578623826616" />
+    <state width="1323" height="155" key="GridCell.Tab.1.bottom" timestamp="1578609314977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="155" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578609314977" />
+    <state width="1323" height="155" key="GridCell.Tab.1.center" timestamp="1578609314976">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="155" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1578609314976" />
+    <state width="1323" height="155" key="GridCell.Tab.1.left" timestamp="1578609314976">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="155" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1578609314976" />
+    <state width="1323" height="155" key="GridCell.Tab.1.right" timestamp="1578609314976">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="155" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1578609314976" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1579437884274">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1579437884274" />
+    <state x="413" y="127" key="extract.method.dialog" timestamp="1578447096613">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="127" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1578447096613" />
+  </component>
+</project>

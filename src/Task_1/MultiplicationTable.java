@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.regex.*;
 
-public class Main {
+public class MultiplicationTable {
 
     public static void main(String[] args) {
         boolean flag = true;
