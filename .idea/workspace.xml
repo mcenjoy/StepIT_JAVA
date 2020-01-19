@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f28f9f34-3d19-43ed-9c2b-c75eb1e7cf91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Java_Home-1/META-INF/Java_Home-1.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Java_Home-1/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_1/MultiplicationTable.java" afterDir="false" />
+    <list default="true" id="f28f9f34-3d19-43ed-9c2b-c75eb1e7cf91" name="Default Changelist" comment="init commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +75,7 @@
       <workItem from="1578610642679" duration="2515000" />
       <workItem from="1578881566679" duration="37000" />
       <workItem from="1579436998162" duration="153000" />
-      <workItem from="1579437209828" duration="1575000" />
+      <workItem from="1579437209828" duration="2178000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1579437708171</created>
@@ -107,7 +98,35 @@
       <option name="project" value="LOCAL" />
       <updated>1579438415663</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init commit">
+      <created>1579438794948</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579438794948</updated>
+    </task>
+    <task id="LOCAL-00005" summary="init commit">
+      <created>1579438875180</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579438875180</updated>
+    </task>
+    <task id="LOCAL-00006" summary="init commit">
+      <created>1579438963612</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579438963612</updated>
+    </task>
+    <task id="LOCAL-00007" summary="init commit">
+      <created>1579439116209</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579439116209</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,18 +153,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="445" y="255" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1578542711905" />
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1579438793349">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1579439115162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579438793349" />
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579439115162" />
     <state width="422" height="466" key="DebuggerActiveHint" timestamp="1578555485138">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="422" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1578555485138" />
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1579438164491">
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1579439200301">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1579438164491" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1579439200301" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1579437092059">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -158,22 +177,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="497" y="72" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1579437610809" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1578623826616">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1579439098834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578623826616" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1578623826616">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579439098834" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1579439098833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578623826616" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1578623826616">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579439098833" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1579439098833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578623826616" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1578623826616">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579439098833" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1579439098833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578623826616" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579439098833" />
     <state width="1323" height="155" key="GridCell.Tab.1.bottom" timestamp="1578609314977">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -190,10 +209,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="155" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1578609314976" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1579438801614">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1579439090245">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1579438801614" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1579439090245" />
     <state x="413" y="127" key="extract.method.dialog" timestamp="1578447096613">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
