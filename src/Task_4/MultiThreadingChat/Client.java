@@ -65,19 +65,12 @@ class Client {
 
     public void disconnect() {
         try {
-            if (odc != null) {
-                odc.close();
-            }
-            if (idc != null) {
-                idc.close();
-            }
-            if (socket != null) {
-                socket.close();
-            }
+            if (odc != null) odc.close();
+            if (idc != null) idc.close();
+            if (socket != null) socket.close();
+            System.exit(0);
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            System.exit(0);
         }
     }
 }
