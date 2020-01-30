@@ -12,8 +12,8 @@ class Client {
 
     public Client() {
         try {
-            socket = new Socket(InetAddress.getLocalHost(), 5051);
-            // Socket socket = new Socket("SERVER_NAME", 5051);
+            socket = new Socket(InetAddress.getLocalHost(), 7051);
+            // Socket socket = new Socket("SERVER_NAME", 7051);
             odc = new PrintStream(socket.getOutputStream());
             idc = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             /*   Output all data */
@@ -71,14 +71,13 @@ class Client {
             if (idc != null) {
                 idc.close();
             }
+            if (socket != null) {
+                socket.close();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if (socket != null) try {
-                socket.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            System.exit(0);
         }
     }
 }

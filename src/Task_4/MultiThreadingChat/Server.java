@@ -7,11 +7,12 @@ import java.util.*;
 public class Server {
     private static ArrayList<Connection> clients = new ArrayList<>();
     private static ArrayList<String> names = new ArrayList<>();
+    private static ServerSocket server;
 
     public static void main(String[] args) {
 
         try {
-            ServerSocket server = new ServerSocket(5051);
+            server = new ServerSocket(7051);
             System.out.println("The chat server is running...");
             while (!server.isClosed()) {
                 Socket socket = server.accept();
@@ -20,9 +21,23 @@ public class Server {
                 clients.add(thread);
                 thread.start();
             }
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             System.err.println(e.toString());
+        } finally {
+            closeAll();
+        }
+    }
+
+    private static void closeAll() {
+        try {
+            server.close();
+            synchronized (clients) {
+                for (Connection client : clients) {
+                    client.disconnect();
+                }
+            }
+        } catch (Exception e) {
+            System.err.println("Connections are not closed properly");
         }
     }
 
@@ -36,13 +51,19 @@ public class Server {
         public Connection(Socket s) {
             this.sk = s;
             this.addr = s.getInetAddress();
+            try {
+                ids = new BufferedReader(new InputStreamReader(sk.getInputStream()));
+                ods = new PrintStream(sk.getOutputStream(), true);
+
+            } catch (IOException e) {
+                e.printStackTrace();
+                disconnect();
+            }
         }
 
         @Override
         public void run() {
             try {
-                ids = new BufferedReader(new InputStreamReader(sk.getInputStream()));
-                ods = new PrintStream(sk.getOutputStream(), true);
                 while (!sk.isClosed()) {
                     ods.println("Enter NickName: ");
                     nameOfUser = ids.readLine();
@@ -78,7 +99,6 @@ public class Server {
                             clients.remove(this);
                             break;
                         }
-
                         onClientMessage(this, chatSession);
                     }
                     synchronized (clients) {
