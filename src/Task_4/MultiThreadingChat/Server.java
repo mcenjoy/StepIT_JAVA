@@ -4,13 +4,12 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-public class Server {
+class Server {
     private static ArrayList<Connection> clients = new ArrayList<>();
     private static ArrayList<String> names = new ArrayList<>();
     private static ServerSocket server;
 
-    public static void main(String[] args) {
-
+    public Server () {
         try {
             server = new ServerSocket(7051);
             System.out.println("The chat server is running...");

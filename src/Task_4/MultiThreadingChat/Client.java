@@ -34,10 +34,6 @@ class Client {
         }
     }
 
-    public static void main(String[] args) {
-        new Client();
-    }
-
     private class ClientDataSender extends Thread {
         private boolean stopped = false;
 
