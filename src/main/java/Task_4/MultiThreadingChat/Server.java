@@ -2,14 +2,18 @@ package Task_4.MultiThreadingChat;
 
 import java.io.*;
 import java.net.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 
 class Server {
     private static ArrayList<Connection> clients = new ArrayList<>();
     private static ArrayList<String> names = new ArrayList<>();
+    private static Map<Integer, String> sonnets = new HashMap<>();
     private static ServerSocket server;
 
-    public Server () {
+    public Server() {
         try {
             server = new ServerSocket(7051);
             System.out.println("The chat server is running...");
@@ -114,7 +118,7 @@ class Server {
         }
 
         public String countUsersOnline(ArrayList<Connection> listNames) {
-            var usersList = new StringBuilder();
+            StringBuilder usersList = new StringBuilder();
             int number = 1;
             for (Connection listName : listNames) {
                 usersList.append(number)
@@ -144,6 +148,8 @@ class Server {
                     System.out.println("NumberFormatException: " + nfe.getMessage());
                     ods.println(nfe.getMessage() + " is not a number");
                 }
+            } else if (message.startsWith("getsonnet")) {
+                ods.println(sonnets.get(getSonnet() - 1));
             } else {
                 // Send message to all in this chat room
                 synchronized (clients) {
@@ -156,6 +162,34 @@ class Server {
                     }
                 }
             }
+        }
+
+        public int getSonnet() {
+            try {
+                String filePath = String.format("%s/src/main/java/Task_4/MultiThreadingChat/sonnets/sonnets.txt", new File("").getAbsolutePath());
+                var lines = Files.readAllLines(Paths.get(filePath), StandardCharsets.UTF_8);
+                StringBuilder sonnet = new StringBuilder();
+                int counter = 0;
+                for (String nc : lines) {
+                    if (nc.matches("\\d+") || nc.matches("x x x")) {
+                        if (!sonnet.toString().equals("")) {
+                            if (!nc.matches("x x x")) {
+                                int df = Integer.parseInt(nc) - 1;
+                                nc = Integer.toString(df);
+                            }
+                            sonnets.put(counter++, nc + "\n" + sonnet.toString().trim());
+                            sonnet = new StringBuilder();
+                        }
+                    } else {
+                        sonnet.append(nc);
+                        sonnet.append("\n");
+                    }
+                }
+                sonnets.remove(0);
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+            return new Random().nextInt(sonnets.size() - 1);
         }
 
         public void disconnect() {
