@@ -90,8 +90,9 @@ class Server {
                             }
                             ct.ods.println("******\nUsers Online - " + clients.size() + "\n******");
                             ct.ods.print(countUsersOnline(clients));
-                            ct.ods.println("Exit - \"exit\"");
                             ct.ods.println("Private Messaging - \"send:{number in list}:{message}\"");
+                            ct.ods.println("Get Shakespeare Sonnet - \"getsonnet\"");
+                            ct.ods.println("Exit - \"exit\"");
                         }
                     }
                     String chatSession;

@@ -3,7 +3,7 @@ package Task_4.MultiThreadingChat;
 import java.util.Scanner;
 
 public class MainApp {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner in = new Scanner(System.in);
         System.out.println("1. Server");
         System.out.println("2. Chat Client");
@@ -11,6 +11,7 @@ public class MainApp {
         boolean quit = false;
         int menuItem;
         do {
+            Thread.sleep(100);
             System.out.print("Choose menu item: ");
             menuItem = in.nextInt();
             switch (menuItem) {
